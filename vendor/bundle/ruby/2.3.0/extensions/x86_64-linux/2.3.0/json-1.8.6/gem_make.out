@@ -1,0 +1,13 @@
+current directory: /home/cabox/workspace/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+/home/cabox/.rvm/rubies/ruby-2.3.2/bin/ruby -r ./siteconf20180302-14826-xgw2gj.rb extconf.rb
+creating Makefile
+
+current directory: /home/cabox/workspace/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/cabox/workspace/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /home/cabox/workspace/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install
