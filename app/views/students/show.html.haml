@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @student.name
+%p
+  %b Lastname:
+  = @student.lastname
+%p
+  %b Birthday:
+  = @student.birthday
+
+= link_to 'Edit', edit_student_path(@student)
+\|
+= link_to 'Back', students_path
