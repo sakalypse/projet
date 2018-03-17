@@ -1,40 +1,19 @@
 default: &default
-  adapter: postgresql
-  host: ec2-54-228-181-43.eu-west-1.compute.amazonaws.com
-  database: d4rhe92c7k2qme
-  user: hvvehxbnwayxbi
-  password: ba57c6b6b465a7bb73e71dcd49f3f36bbedfb09569ee414787871ba83d92fa11
-  port: 5432
+  adapter: sqlite3
   pool: 5
   timeout: 5000
-
 
 development:
-  adapter: postgresql
-  host: ec2-54-228-181-43.eu-west-1.compute.amazonaws.com
-  database: d4rhe92c7k2qme
-  user: hvvehxbnwayxbi
-  password: ba57c6b6b465a7bb73e71dcd49f3f36bbedfb09569ee414787871ba83d92fa11
-  port: 5432
-  pool: 5
-  timeout: 5000
-  
+  <<: *default
+  database: db/development.sqlite3
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
 test:
-  adapter: postgresql
-  host: ec2-54-228-181-43.eu-west-1.compute.amazonaws.com
-  database: d4rhe92c7k2qme
-  user: hvvehxbnwayxbi
-  password: ba57c6b6b465a7bb73e71dcd49f3f36bbedfb09569ee414787871ba83d92fa11
-  port: 5432
-  pool: 5
-  timeout: 5000
+  <<: *default
+  database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  host: ec2-54-228-181-43.eu-west-1.compute.amazonaws.com
-  database: d4rhe92c7k2qme
-  user: hvvehxbnwayxbi
-  password: ba57c6b6b465a7bb73e71dcd49f3f36bbedfb09569ee414787871ba83d92fa11
-  port: 5432
-  pool: 5
-  timeout: 5000
+  <<: *default
+  database: db/production.sqlite3
