@@ -3,14 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
-
-gem 'pg', '~> 0.18.4',  group: :production
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: [:development, :test]
-
-gem 'nominatim', '~> 0.0.6'
-gem 'puma'
+gem 'pg', '~> 0.18', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -19,6 +12,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+gem 'puma'
+gem 'haml-rails', '~> 1.0'
+gem 'rails_12factor'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -43,3 +39,6 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+ruby '2.3.5'
