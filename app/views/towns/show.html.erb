@@ -20,5 +20,10 @@
   <%= @town.longitude %>
 </p>
 
+<p>
+  <strong>Weather:</strong>
+  <%= @weather.take(4) %>
+</p>
+
 <%= link_to 'Edit', edit_town_path(@town) %> |
 <%= link_to 'Back', towns_path %>

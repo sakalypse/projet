@@ -1,5 +1,6 @@
 class Town < ActiveRecord::Base
   before_validation :geocode
+  after_find :findWeather
   validates :name, :latitude, :longitude, presence: true
   
   private
@@ -10,5 +11,9 @@ class Town < ActiveRecord::Base
       self.latitude = current_town.latitude
       self.longitude = current_town.longitude
     end
+  end
+  
+  def findWeather
+    
   end
 end
