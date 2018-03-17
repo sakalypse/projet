@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'puma'
 gem 'haml-rails', '~> 1.0'
 gem 'rails_12factor'
+gem 'sqlite3', group: [:development, :test]
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
