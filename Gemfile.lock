@@ -80,6 +80,7 @@ GEM
       faraday
       multi_json
     pg (0.18.4)
+    puma (3.11.3)
     rack (1.6.9)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -150,6 +151,7 @@ DEPENDENCIES
   jquery-rails
   nominatim (~> 0.0.6)
   pg (~> 0.18.4)
+  puma
   rails (= 4.2.7.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

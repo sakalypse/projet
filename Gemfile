@@ -10,7 +10,7 @@ gem 'pg', '~> 0.18.4',  group: :production
 gem 'sqlite3', group: [:development, :test]
 
 gem 'nominatim', '~> 0.0.6'
-
+gem 'puma'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
