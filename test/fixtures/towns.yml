@@ -2,10 +2,12 @@
 
 one:
   name: MyString
-  lastname: MyString
-  birthday: 2018-03-17
+  zipcode: MyString
+  latitude: 1.5
+  longitude: 1.5
 
 two:
   name: MyString
-  lastname: MyString
-  birthday: 2018-03-17
+  zipcode: MyString
+  latitude: 1.5
+  longitude: 1.5
