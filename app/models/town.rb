@@ -1,6 +1,5 @@
 class Town < ActiveRecord::Base
   before_validation :geocode
-  after_find :findWeather
   validates :name, :latitude, :longitude, presence: true
   
   private
@@ -13,7 +12,8 @@ class Town < ActiveRecord::Base
     end
   end
   
-  def findWeather
-    
+  public
+  def self.findWeather(lat, long)
+    weather = ForecastIO.forecast(lat, long, params: {lang: 'fr', units: 'si'})
   end
 end
