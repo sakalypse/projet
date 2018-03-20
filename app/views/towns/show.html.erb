@@ -21,9 +21,20 @@
 </p>
 
 <p>
-  <strong>Weather:</strong>
-  <%= @weather %>
+  <strong>Temperature:</strong>
+  <%= @weather.apparentTemperature %>
 </p>
+
+<p>
+  <strong>Humidité:</strong>
+  <%= @weather.humidity %>
+</p>
+
+<p>
+  <strong>Résumé:</strong>
+  <%= @weather.summary %>
+</p>
+
 
 <%= link_to 'Edit', edit_town_path(@town) %> |
 <%= link_to 'Back', towns_path %>

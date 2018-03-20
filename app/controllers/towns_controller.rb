@@ -10,7 +10,7 @@ class TownsController < ApplicationController
   # GET /towns/1
   # GET /towns/1.json
   def show
-    @weather = Town.findWeather(params[:latitude], params[:longitude])
+    @weather = @town.findWeather
   end
 
   # GET /towns/new

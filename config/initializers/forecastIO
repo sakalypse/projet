@@ -1,3 +1,0 @@
-ForecastIO.configure do |c|
-  c.api_key = e6da8d1e21152bee11dfc93b1b109024
-end
