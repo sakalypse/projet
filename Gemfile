@@ -18,8 +18,20 @@ gem 'rails_12factor'
 gem 'sqlite3', group: [:development, :test]
 gem 'forecast_io'
 gem 'nominatim'
-gem 'simplecov', require: false, group: :test
-gem 'rspec', group: [:development, :test]
+
+# Test coverage
+group :test do
+  gem 'simplecov'
+  gem 'simplecov-console'
+  gem 'codeclimate-test-reporter', '~> 1.0.0'
+end
+ 
+# Use rspec
+gem 'rspec', '3.7.0'
+gem 'rspec-core', '3.7.1'
+gem 'rspec-expectations', '3.7.0'
+gem 'rspec-support', '3.7.1'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
