@@ -36,7 +36,6 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    ansi (1.5.0)
     arel (6.0.4)
     builder (3.2.3)
     coffee-rails (4.0.1)
@@ -71,7 +70,6 @@ GEM
       railties (>= 4.0.1)
     hashie (3.5.7)
     hike (1.2.3)
-    hirb (0.7.3)
     html2haml (2.2.0)
       erubis (~> 2.7.0)
       haml (>= 4.0, < 6)
@@ -167,10 +165,6 @@ GEM
       docile (~> 1.1)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
-    simplecov-console (0.4.2)
-      ansi
-      hirb
-      simplecov
     simplecov-html (0.10.2)
     spring (2.0.2)
       activesupport (>= 4.2)
@@ -214,7 +208,6 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   simplecov
-  simplecov-console
   spring
   sqlite3
   turbolinks
