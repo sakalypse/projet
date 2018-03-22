@@ -20,6 +20,7 @@ gem 'forecast_io'
 gem 'nominatim'
 gem 'simplecov'
 gem 'simplecov-console'
+gem 'rspec'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
