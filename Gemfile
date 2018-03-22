@@ -18,9 +18,8 @@ gem 'rails_12factor'
 gem 'sqlite3', group: [:development, :test]
 gem 'forecast_io'
 gem 'nominatim'
-gem 'simplecov'
-gem 'simplecov-console'
-gem 'rspec'
+gem 'simplecov', require: false, group: :test
+gem 'rspec', group: [:development, :test]
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
